@@ -11,8 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "buffer": "^6.0.3",
+    "react-scripts": "^5.0.1",
     "solc": "^0.8.15",
-    "web3": "^1.7.4"
+    "web3": "^0.20.7"
   },
   "devDependencies": {
     "lite-server": "^2.3.0"

@@ -154,6 +154,16 @@
             class="form-horizontal"
             action="./doctor.html"
           >
+          <div class="form-group"> 
+              <label for="designation" class="control-label col-sm-2 name">Login As</label>
+              <div class="col-sm-8">
+                  <select class="form-control" id="designation" required>
+                      <option selected disabled>-- Please Select --</option>
+                      <option value="0">Patient</option>
+                      <option value="1">Doctor</option>
+                  </select>
+              </div>
+            </div>
             <div class="form-group">
               <label class="control-label col-sm-2 name" for="name"
                 >Name:
@@ -214,16 +224,7 @@
                 </div>
             
             </div>
-            <div class="form-group"> 
-              <label for="designation" class="control-label col-sm-2 name">Designation</label>
-              <div class="col-sm-8">
-                  <select class="form-control" id="designation" required>
-                      <option selected disabled>-- Please Select --</option>
-                      <option value="0">Patient</option>
-                      <option value="1">Doctor</option>
-                  </select>
-              </div>
-            </div>
+            
           </form>
           <div class="text-center">
             <button class="btn btn-primary btn-lg" onclick="addAgent()">
@@ -333,7 +334,7 @@ Public Key: ${publicKey}
                   console.log("result:" + result);
                   ipfshash = result[0].hash;
                   console.log("Ipfs hash:" + ipfshash);
-                  contractInstance.add_agent(
+                  contractInstance.add_Person(
                     name,
                     age,
                     phoneno,
@@ -352,7 +353,7 @@ Public Key: ${publicKey}
                 }
               });
             } else {
-              contractInstance.add_agent(
+              contractInstance.add_Person(
                 name,
                 age,
                 phoneno,

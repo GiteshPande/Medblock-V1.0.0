@@ -378,7 +378,7 @@ Comments : ${comments}
                     console.log(error)
                 }else{
                     ipfshash = result[0].hash;
-                    contractInstance.insurance_claim(patientAddress, diagnosis, ipfshash, {gas: 1000000}, function(error, result){
+                    contractInstance.Details_deta(patientAddress, diagnosis, ipfshash, {gas: 1000000}, function(error, result){
                         if(!error){
                             alert("Diagnosis submited Successfully.");
                             // delete content row
