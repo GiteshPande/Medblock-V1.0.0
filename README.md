@@ -78,3 +78,23 @@ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods "['PUT', 'POST',
     ```
     - If you change contents of any contract , replace existing deployment using `truffle migrate --reset`.
     - Deploy the modified contract on remix and change the ABI in src/js/app/js to the `deploted contract` ABI.
+
+### 5. Running the DApp.
+  #### 1. Connecting Metamask to our local blockchain
+    - Connect metamask to localhost:8485
+    - Click on `Import Account`.
+    - Select any account from ganache and copy the private key to import account into metaMask.
+    
+  #### 2. Starting IPFS
+    - Start the IPFS Desktop Application
+    
+  #### 3. Starting Local Server
+    - Open a new terminal window and navigate to `/YOUR_PROJECT_DIRECTORY/app/`.
+    - Run `npm start`.
+    - Open `localhost:3000` on your browser.
+
+### Eureka! Eureka ! The DApp is up and running locally
+
+## Contribution
+
+We have added a new `FurtherImprovement.md` file please go ahead, read it, review it and drop your suggestions as a PR :smiley:.
