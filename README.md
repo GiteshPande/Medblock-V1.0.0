@@ -7,6 +7,8 @@ The aims of this application are:-
 - To provide secure storage of electronic records by defining granular access rules for the users of the proposed application. 
 - This application also discusses the scalability problem faced by the blockchain technology in general via use of off-chain storage of the records. This application provides the EHR system with the benefits of having a scalable, secure and integral blockchain-based solution.
 
+### Video Demo: [Link](https://drive.google.com/drive/folders/1L_RbuDFJvPhj8KgBxLrdmfUuBdAR5SWD?usp=sharing)
+
 
 ## Installation Procdure
 
